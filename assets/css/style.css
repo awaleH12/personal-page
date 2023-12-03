@@ -147,11 +147,41 @@ h3 {
 .full-height {
   height: 100vh;
 }
-#intro.section {
-  background: url('https://res.cloudinary.com/aborstein/image/upload/q_auto:eco/v1686357430/andrew-full-3x2.jpg') no-repeat top
+
+/* ===== Video background ===== */
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* video end */
+/* #intro.section {
+  background: url('/assets/video/hero\ video_1.mp4') no-repeat top
     center/cover;
   position: relative;
-}
+} */
 #intro.section .container {
   color: white;
   font-weight: 200;
